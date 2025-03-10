@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import type { Employee } from "../types/employee";
+import { useState, useEffect } from 'react';
+import type { Employee } from '../types/employee';
 
 const useEmployees = (searchTerm: string) => {
   const [employees, setEmployees] = useState<Employee[]>([]);
@@ -12,9 +12,11 @@ const useEmployees = (searchTerm: string) => {
     const fetchEmployees = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`http://localhost:3000/employees?q=${encodeURIComponent(searchTerm)}`);
+        const response = await fetch(
+          `http://localhost:3000/employees?q=${encodeURIComponent(searchTerm)}`,
+        );
         if (!response.ok) {
-          throw new Error("Erro ao carregar os funcionários");
+          throw new Error('Erro ao carregar os funcionários');
         }
         const data = await response.json();
         setEmployees(data);

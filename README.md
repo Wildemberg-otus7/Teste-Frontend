@@ -40,8 +40,8 @@ npm install -g json-server
    Primeiro, faça o clone deste repositório em sua máquina local:
 
    ```bash
-   git clone https://github.com/seu-usuario/my-app.git
-   cd my-app
+   [git clone https://github.com/seu-usuario/my-app.git](https://github.com/Wildemberg-otus7/Teste-Frontend.git)
+   cd Teste-Frontend
    ```
 
 2. **Instalar Dependências**
